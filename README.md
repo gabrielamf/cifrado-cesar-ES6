@@ -1,75 +1,28 @@
-## CIFRADO CÉSAR
+# Cifrado César ES6
 
-###### Se presenta un programa que se utiliza para *encriptar y desencriptar mensajes*, utilizando el **CIFRADO CÉSAR**. Obedece a las minúsculas y mayúsculas.  
-
-
-1.  **Estructura**  
-  El código presenta dos funciones:  
-
-  **cipher**
-
-  * *Function cipher* (mayúsculas)
-      > input = "HOLA"  
-    output = "OVSH"
-
-  * *Function cipher* (minúsculas)
-      > input = "hola"  
-      output = "ovsh"
-
-  **descipher**.
-
-  * *Function decipher* (mayúsculas)
-        > input = "OVSH"  
-        output = "HOLA"
-
-  * *Function decipher* (minúsculas)
-        > input = "ovsh"  
-        output = "hola"  
+* **Track:** _JS Deep Dive_
+* **Curso:** _Crea tu propia librería usando Javascript_
+* **Unidad:** _reto 1 _
 
 ***
-### PSEUDOCÓDIGO  
 
-    function cipher (texto_a_cifrar){  
-      texto_cifrado = "",  
+El presente reto pone a prueba nuestros conocimientos sobre **ES6**, utilización de sintaxis.
 
-      para ( i = 0 ; i < texto_a_cifrar.longitud ; i++){  
-        si (códigoASCII[i] < 97){  
-          posicion_alfabeto = códigoASCII[i] - 65;  
-          texto_cifrado = ((posicion_alfabeto + 33) modulo de 26 ) + 65;  
-          nueva_posicion += texto_cifrado en códigoASCII
-          }  
+## Objetivo
 
-        si no (códigoASCII[i] >= 97){  
-          posicion_alfabeto = códigoASCII[i] - 97;  
-          texto_cifrado = ((posicion_alfabeto + 33) modulo de 26 ) + 97;  
-          nueva_posicion += texto_cifrado en códigoASCII
-            }
-        }  
-      }  
-      return texto_cifrado  
+El reto consiste en reutilizar nuestro código de un reto anterior ** Cifrado César** y convertir su sintaxis de acuerdo al estandar ES6. Este programa se encarga de cifrar y descifrar mensajes del usuario. A continuación una imagen del resultado:
+
+![view](assets/docs/cifrado-cesar.png)
 
 
+## Detalles adicionales
 
-      function decipher (texto_a_descifrar){  
-        texto_descifrado = "",  
+* Dentro del repositorio encontrarás un archivo index.html el cual contiene la estructura sobre la que se realizó el reto.
+* En la carpeta css un archivo main.css donde está todos los estilos aplicados los cuales están enlazados con mi HTML.
+* En assets también se encuentra la carpeta images donde se encuentran todos las imágenes usadas para completar este reto.
+* Por último el README.md explicando el contenido de mi repositorio.
+* Dentro de la rama **gh-pages** un link donde se podrá visualizar el resultado final.
 
-        para ( i = 0 ; i < texto_a_descifrar.longitud ; i++){  
-          si (códigoASCII[i] < 97){  
-            posicion_alfabeto = códigoASCII[i] + 65;  
-            texto_descifrado = ((posicion_alfabeto - 33) modulo de 26 ) + 65;  
-            nueva_posicion += texto_descifrado en códigoASCII
-            }  
+## Autor
 
-          si no (códigoASCII[i] >= 97){  
-            posicion_alfabeto = códigoASCII[i] - 45;  
-            texto_descifrado = ((posicion_alfabeto - 33) modulo de 26 ) + 97;  
-            nueva_posicion += texto_descifrado en códigoASCII
-              }
-          }  
-        }  
-        return texto_descifrado  
-
-***
-### DIAGRAMA DE FLUJO :
-
-![Atributo Alt](https://drive.google.com/file/d/0B3bpOQCV2XsLYXRZUl91Q0ZXcFU/view "diagrama_cifrado") 
+* Gabriela Mamani Flores.

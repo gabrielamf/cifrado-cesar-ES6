@@ -2,7 +2,7 @@ const btnCipher = document.getElementById('cipher');
 const btnDescipher = document.getElementById('decipher');
 const input = document.getElementById('inputText');
 const box = document.getElementById('content');
-const desplazamiento = document.getElementById('desplazamiento');
+const displacement = document.getElementById('displacement');
 
 // no introduce numeros en el input
 input.addEventListener('keypress', val = event => {
@@ -15,7 +15,7 @@ input.addEventListener('keypress', val = event => {
 
 // función cifrado
 btnCipher.addEventListener('click', () => {
-  let valor = parseInt(desplazamiento.value);
+  let valor = parseInt(displacement.value);
   let cipherWord = '';
   let inpuTxt = input.value;
 
@@ -35,7 +35,7 @@ btnCipher.addEventListener('click', () => {
 
 // función descifrado
 btnDescipher.addEventListener('click', () => {
-  let valor = parseInt(desplazamiento.value);
+  let valor = parseInt(displacement.value);
   let decipherWord = '';
   let inpuTxt = input.value;
 
