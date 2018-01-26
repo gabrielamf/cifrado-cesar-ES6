@@ -9,21 +9,23 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- link estilos -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Lyft</title>
+    <title>Cifrado César</title>
   </head>
   <body>
-    <div class="container text-center vh100 container-flex">
+    <div class="container-fluid bg text-center vh100 container-flex">
       <div class="row">
         <div class="col-xs-12 border">
           <h1>Cifrado César ES6</h1>
+          <hr>
           <p>Escriba el número de desplazamiento</p>  
           <input type="number" placeholder="desplazamiento" id="desplazamiento" required>
+          <hr>
           <p>Escriba una palabra o frase que desee cifrar o descifrar</p>
           <form>
             <input type="text" placeholder="palabra o frase" id="inputText" onkeypress="return val(event)">
           </form>
-          <button id="cipher">cifrar </button>
-          <button id="decipher">descifrar</button>
+          <button  class="button" id="cipher">cifrar </button>
+          <button class="button" id="decipher">descifrar</button>
           <div id="content"></div>
         </div>
       </div>

@@ -13,6 +13,7 @@ input.addEventListener('keypress', val = event => {
   return patron.test(te);
 });
 
+// función cifrado
 btnCipher.addEventListener('click', () => {
   let valor = parseInt(desplazamiento.value);
   let cipherWord = '';
@@ -28,10 +29,11 @@ btnCipher.addEventListener('click', () => {
         cipherWord += ' ';
       }
     }
-    box.innerHTML = `<p> Tu texto cifrado es : ${cipherWord} </p>`;
+    box.innerHTML = `<p class="result"> Tu texto cifrado es : ${cipherWord} </p>`;
   }
 });
 
+// función descifrado
 btnDescipher.addEventListener('click', () => {
   let valor = parseInt(desplazamiento.value);
   let decipherWord = '';
@@ -47,6 +49,6 @@ btnDescipher.addEventListener('click', () => {
         decipherWord += ' ';
       }
     }
-    box.innerHTML = `<p> Tu texto descifrado es : ${decipherWord} </p>`;
+    box.innerHTML = `<p class="result"> Tu texto descifrado es : ${decipherWord} </p>`;
   }
 });
