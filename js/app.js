@@ -4,9 +4,13 @@ const input = document.getElementById('inputText');
 const box = document.getElementById('content');
 const desplazamiento = document.getElementById('desplazamiento');
 
-input.addEventListener('keypress', (tecla) => {
-  if (tecla.charCode < 48 || tecla.charCode > 57)
-    return false;
+// no introduce numeros en el input
+input.addEventListener('keypress', val = event => {
+  tecla = (document.all) ? event.keyCode : event.which;
+  if (tecla === 8) return true;
+  patron = /[A-Za-z]/;
+  te = String.fromCharCode(tecla);
+  return patron.test(te);
 });
 
 btnCipher.addEventListener('click', () => {

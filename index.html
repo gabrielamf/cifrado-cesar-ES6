@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>CIFRADO CESAR ES6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- link google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- link estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lyft</title>
   </head>
   <body>
-    <h1>Cifrado César ES6</h1>
-    <p>Escriba el número de desplazamiento</p>  
-    <input type="number" placeholder="desplazamiento" id="desplazamiento">
-    <p>Escriba una palabra o frase que desee cifrar o descifrar</p>
-    <form>
-      <input type="text" placeholder="palabra o frase" pattern="[a-zA-Z]" id="inputText" title="Sólo ingresa letras porfavor">
-      <input type="submit" value="Cifrar" id="cipher">
-      <input type="submit" value="Descifrar" id="decipher">
-    </form>
-    <div id="content"></div>
+    <div class="container text-center vh100 container-flex">
+      <div class="row">
+        <div class="col-xs-12 border">
+          <h1>Cifrado César ES6</h1>
+          <p>Escriba el número de desplazamiento</p>  
+          <input type="number" placeholder="desplazamiento" id="desplazamiento" required>
+          <p>Escriba una palabra o frase que desee cifrar o descifrar</p>
+          <form>
+            <input type="text" placeholder="palabra o frase" id="inputText" onkeypress="return val(event)">
+          </form>
+          <button id="cipher">cifrar </button>
+          <button id="decipher">descifrar</button>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
